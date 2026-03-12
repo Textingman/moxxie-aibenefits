@@ -65,13 +65,13 @@ function VerifyPageContent() {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white flex items-center justify-center px-4">
+    <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8">
         {/* Logo/Brand */}
         <div className="flex justify-center mb-8">
           <Image 
-            src="/HJF_logo.png" 
-            alt="TryHomeJobFinder" 
+            src="/SolarSolutions.png" 
+            alt="TrySolarSolutions" 
             width={320} 
             height={107}
             className="h-32 w-auto"
@@ -95,7 +95,7 @@ function VerifyPageContent() {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               placeholder="Enter resume"
-              className="w-full bg-gray-50 rounded-lg p-6 text-3xl font-bold text-gray-900 tracking-wider text-center border-2 border-gray-200 focus:border-[#2563eb] focus:outline-none transition-colors"
+              className="w-full bg-white rounded-lg p-6 text-3xl font-bold text-gray-900 tracking-wider text-center border-2 border-gray-200 focus:border-[#2563eb] focus:outline-none transition-colors"
             />
           </div>
 
@@ -126,7 +126,7 @@ function VerifyPageContent() {
         {/* Footer */}
         <div className="text-center pt-6 border-t border-gray-200">
           <p className="text-xs text-gray-500">
-            Secured by TryHomeJobFinder
+            Secured by TrySolarSolutions
           </p>
         </div>
       </div>
@@ -137,7 +137,7 @@ function VerifyPageContent() {
 export default function VerifyPage() {
   return (
     <Suspense fallback={
-      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white flex items-center justify-center">
+      <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#2563eb] mx-auto"></div>
           <p className="mt-4 text-gray-600">Loading...</p>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Shield, Target, Users, Zap } from 'lucide-react';
+import { Bot, ShieldCheck, BookOpen, Zap } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -12,8 +12,8 @@ export default function AboutPage() {
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
                 <Image 
-                  src="/HJF_logo.png" 
-                  alt="TryHomeJobFinder" 
+                  src="/SolarSolutions.png" 
+                  alt="TrySolarSolutions" 
                   width={500} 
                   height={167}
                   className="h-32 w-auto"
@@ -22,20 +22,20 @@ export default function AboutPage() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/" className="text-[#6B7280] hover:text-[#3B82F6] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </Link>
-                <Link href="/about" className="text-[#2F3A40] hover:text-[#3B82F6] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/about" style={{ color: '#1E6FA8' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   About
                 </Link>
-                <Link href="/privacy" className="text-[#6B7280] hover:text-[#3B82F6] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/privacy" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   Privacy
                 </Link>
-                <Link href="/terms" className="text-[#6B7280] hover:text-[#3B82F6] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/terms" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   Terms
                 </Link>
-                <Link href="/signup" className="bg-[#3B82F6] text-white hover:bg-[#2563eb] px-4 py-2 rounded-md text-sm font-medium">
-                  Get Started
+                <Link href="/signup" className="text-white px-4 py-2 rounded-md text-sm font-medium" style={{ backgroundColor: '#F59E0B' }}>
+                  Talk to Our AI
                 </Link>
               </div>
             </div>
@@ -44,14 +44,18 @@ export default function AboutPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-white py-20">
+      <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl font-extrabold text-[#2F3A40] mb-6">
-              Who We Are
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-6" style={{ backgroundColor: '#FEF3C7', color: '#F59E0B' }}>
+              <Bot className="w-4 h-4" />
+              AI-Powered — 100% Independent
+            </div>
+            <h1 className="text-5xl font-extrabold mb-6" style={{ color: '#1F2937' }}>
+              An AI Agent Built to Educate,<br />Not to Sell
             </h1>
-            <p className="text-xl text-[#6B7280] max-w-3xl mx-auto">
-              We're revolutionizing the job search process with AI-powered tools that help job seekers optimize their resumes, ace interviews, and land their dream careers.
+            <p className="text-xl max-w-3xl mx-auto" style={{ color: '#6B7280' }}>
+              TrySolarSolutions is an AI-powered platform that guides homeowners through the solar decision process with honest, unbiased education. We're not a solar company. We're your independent advisor.
             </p>
           </div>
         </div>
@@ -61,49 +65,49 @@ export default function AboutPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-[#2F3A40] mb-6">Our Purpose</h2>
-            <p className="text-lg text-[#6B7280] mb-4">
-              TryHomeJobFinder was created to solve a critical problem: job seekers struggle to stand out in competitive markets and often don't know how to optimize their applications for success.
+            <h2 className="text-4xl font-bold mb-6" style={{ color: '#1F2937' }}>Why We Built This</h2>
+            <p className="text-lg mb-4" style={{ color: '#6B7280' }}>
+              The solar industry is full of salespeople, but short on educators. Homeowners are bombarded with confusing quotes, high-pressure tactics, and conflicting information — and most don't know who to trust.
             </p>
-            <p className="text-lg text-[#6B7280] mb-4">
-              We provide AI-powered tools that analyze resumes, generate tailored cover letters, and offer personalized interview coaching to help candidates present their best selves.
+            <p className="text-lg mb-4" style={{ color: '#6B7280' }}>
+              We built an AI agent that acts as your personal solar advisor — one that has no financial incentive to push you toward any particular product or installer. It simply helps you understand your options and make the best decision for your home.
             </p>
-            <p className="text-lg text-[#6B7280]">
-              Our mission is to democratize access to professional career coaching and make job search success achievable for everyone, regardless of background or experience level.
+            <p className="text-lg" style={{ color: '#6B7280' }}>
+              Think of it as having a knowledgeable friend who happens to know everything about solar — available 24/7, completely free, and always on your side.
             </p>
           </div>
-          <div className="bg-gray-50 rounded-2xl p-8">
+          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#E5E7EB' }}>
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <Target className="w-8 h-8 text-[#3B82F6]" />
+                <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FEF3C7' }}>
+                  <Bot className="w-5 h-5" style={{ color: '#F59E0B' }} />
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-[#2F3A40] mb-2">AI-Powered Insights</h3>
-                  <p className="text-[#6B7280]">
-                    Advanced algorithms analyze your resume and provide actionable feedback to maximize your success rate.
+                  <h3 className="text-lg font-semibold mb-1" style={{ color: '#1F2937' }}>AI-Powered, Always Available</h3>
+                  <p style={{ color: '#6B7280' }}>
+                    Our AI agent is available 24/7 to answer your solar questions instantly — no waiting, no appointments.
                   </p>
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <Shield className="w-8 h-8 text-[#3B82F6]" />
+                <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#DBEAFE' }}>
+                  <ShieldCheck className="w-5 h-5" style={{ color: '#2F8FCB' }} />
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-[#2F3A40] mb-2">Privacy Protected</h3>
-                  <p className="text-[#6B7280]">
-                    Your resume and personal data are encrypted and never shared with third parties.
+                  <h3 className="text-lg font-semibold mb-1" style={{ color: '#1F2937' }}>Zero Conflicts of Interest</h3>
+                  <p style={{ color: '#6B7280' }}>
+                    We receive no commissions or referral fees from solar companies. Our AI's only job is to help you.
                   </p>
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <Zap className="w-8 h-8 text-[#3B82F6]" />
+                <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FEF3C7' }}>
+                  <BookOpen className="w-5 h-5" style={{ color: '#F59E0B' }} />
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-[#2F3A40] mb-2">Instant Results</h3>
-                  <p className="text-[#6B7280]">
-                    Get immediate feedback on your resume with real-time analysis and suggestions.
+                  <h3 className="text-lg font-semibold mb-1" style={{ color: '#1F2937' }}>Education First</h3>
+                  <p style={{ color: '#6B7280' }}>
+                    We believe informed homeowners make better decisions. Our AI educates before you ever talk to an installer.
                   </p>
                 </div>
               </div>
@@ -112,98 +116,101 @@ export default function AboutPage() {
         </div>
       </section>
 
-
-      {/* Why Choose Us Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#2F3A40] mb-4">Why Job Seekers Choose Us</h2>
-          <p className="text-xl text-[#6B7280]">
-            Trusted by thousands of professionals who have successfully landed their dream jobs
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="text-center">
-            <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Shield className="w-8 h-8 text-[#3B82F6]" />
-            </div>
-            <h3 className="text-lg font-semibold text-[#2F3A40] mb-2">Dependable Platform</h3>
-            <p className="text-[#6B7280]">
-              Constructed using proven methodologies ensuring optimal uptime.
+      {/* What the AI Covers Section */}
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#1F2937' }}>What Our AI Agent Covers</h2>
+            <p className="text-xl" style={{ color: '#6B7280' }}>
+              Comprehensive solar education tailored to your home and situation
             </p>
           </div>
 
-          <div className="text-center">
-            <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="w-8 h-8 text-[#3B82F6]" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center p-6 rounded-xl border" style={{ borderColor: '#E5E7EB' }}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#FEF3C7' }}>
+                <span className="text-xl">☀️</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>Solar Basics</h3>
+              <p style={{ color: '#6B7280' }}>
+                How solar works, panel types, system sizing, and what to expect from installation.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold text-[#2F3A40] mb-2">Multi-Brand Capability</h3>
-            <p className="text-[#6B7280]">
-              Accommodate diverse brands through adaptable design configurations.
-            </p>
-          </div>
 
-          <div className="text-center">
-            <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Zap className="w-8 h-8 text-[#3B82F6]" />
+            <div className="text-center p-6 rounded-xl border" style={{ borderColor: '#E5E7EB' }}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#DBEAFE' }}>
+                <span className="text-xl">💰</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>Costs & Incentives</h3>
+              <p style={{ color: '#6B7280' }}>
+                Fair pricing, federal tax credits, state rebates, and financing options explained clearly.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold text-[#2F3A40] mb-2">Superior Performance</h3>
-            <p className="text-[#6B7280]">
-              Worldwide content delivery network guarantees rapid response globally.
-            </p>
-          </div>
 
-          <div className="text-center">
-            <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Target className="w-8 h-8 text-[#3B82F6]" />
+            <div className="text-center p-6 rounded-xl border" style={{ borderColor: '#E5E7EB' }}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#FEF3C7' }}>
+                <span className="text-xl">📋</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>Quote Evaluation</h3>
+              <p style={{ color: '#6B7280' }}>
+                How to read and compare installer quotes, spot red flags, and negotiate better deals.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold text-[#2F3A40] mb-2">Effortless Integration</h3>
-            <p className="text-[#6B7280]">
-              Straightforward URL-driven setup supported by thorough documentation.
-            </p>
+
+            <div className="text-center p-6 rounded-xl border" style={{ borderColor: '#E5E7EB' }}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#DBEAFE' }}>
+                <span className="text-xl">🔋</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>Battery & Storage</h3>
+              <p style={{ color: '#6B7280' }}>
+                Whether battery storage makes sense for your home, costs, and top options available.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#3B82F6] py-20">
+      <section className="py-20" style={{ background: 'linear-gradient(135deg, #F59E0B 0%, #2F8FCB 100%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Bot className="w-16 h-16 text-white mx-auto mb-6" />
           <h2 className="text-4xl font-bold text-white mb-6">
-            Ready to Begin?
+            Ready to Talk to Your AI Solar Advisor?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of job seekers who have transformed their careers with TryHomeJobFinder's AI-powered tools.
+          <p className="text-xl mb-8 max-w-2xl mx-auto" style={{ color: 'rgba(255,255,255,0.9)' }}>
+            Get instant, unbiased answers to all your solar questions — completely free, with zero sales pressure.
           </p>
           <Link
             href="/signup"
-            className="inline-block px-8 py-4 bg-white text-[#3B82F6] text-lg font-semibold rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
+            className="inline-block px-8 py-4 text-lg font-semibold rounded-lg shadow-lg transition-opacity hover:opacity-90"
+            style={{ backgroundColor: '#FFFFFF', color: '#F59E0B' }}
           >
-            Get Started Today
+            Talk to the AI Agent — Free
           </Link>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#2F3A40] text-white py-12">
+      <footer className="text-white py-12" style={{ backgroundColor: '#1F2937' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">TryHomeJobFinder</h3>
-              <p className="text-gray-400">
-                AI-powered career tools for job seekers.
+              <h3 className="text-xl font-bold mb-4">TrySolarSolutions</h3>
+              <p style={{ color: '#9CA3AF' }}>
+                Your AI agent for unbiased solar education.
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Product</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/about" className="text-gray-400 hover:text-white">
+                  <Link href="/about" style={{ color: '#9CA3AF' }} className="hover:text-white">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href="/signup" className="text-gray-400 hover:text-white">
-                    Get Started
+                  <Link href="/signup" style={{ color: '#9CA3AF' }} className="hover:text-white">
+                    Talk to AI
                   </Link>
                 </li>
               </ul>
@@ -212,12 +219,12 @@ export default function AboutPage() {
               <h4 className="font-semibold mb-4">Legal</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/privacy" className="text-gray-400 hover:text-white">
+                  <Link href="/privacy" style={{ color: '#9CA3AF' }} className="hover:text-white">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="/terms" className="text-gray-400 hover:text-white">
+                  <Link href="/terms" style={{ color: '#9CA3AF' }} className="hover:text-white">
                     Terms of Service
                   </Link>
                 </li>
@@ -225,13 +232,13 @@ export default function AboutPage() {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="text-gray-400">
-                support@tryhomejobfinder.com
+              <p style={{ color: '#9CA3AF' }}>
+                support@trysolarsolutions.com
               </p>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 TryHomeJobFinder. All rights reserved.</p>
+          <div className="mt-8 pt-8 text-center" style={{ borderTop: '1px solid #374151', color: '#9CA3AF' }}>
+            <p>&copy; 2025 TrySolarSolutions. All rights reserved.</p>
           </div>
         </div>
       </footer>

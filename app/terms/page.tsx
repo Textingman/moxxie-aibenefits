@@ -11,8 +11,8 @@ export default function TermsPage() {
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
                 <Image 
-                  src="/HJF_logo.png" 
-                  alt="TryHomeJobFinder" 
+                  src="/SolarSolutions.png" 
+                  alt="TrySolarSolutions" 
                   width={500} 
                   height={167}
                   className="h-32 w-auto"
@@ -43,7 +43,7 @@ export default function TermsPage() {
       </nav>
 
       {/* Header */}
-      <section className="bg-gradient-to-b from-gray-50 to-white py-12">
+      <section className="bg-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-extrabold text-[#2F3A40] mb-4">Terms of Service</h1>
           <p className="text-lg text-[#6B7280]">
@@ -58,15 +58,15 @@ export default function TermsPage() {
           
           <h2 className="text-2xl font-bold text-[#2F3A40] mt-8 mb-4">1. Acceptance of Terms</h2>
           <p className="text-[#6B7280] mb-6">
-            By accessing or using TryHomeJobFinder's resume analysis and career coaching service ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not access or use the Service. These Terms apply to all users of the Service, including businesses, developers, and end users.
+            By accessing or using TrySolarSolutions' solar assessment and energy coaching service ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not access or use the Service. These Terms apply to all users of the Service, including businesses, developers, and end users.
           </p>
 
           <h2 className="text-2xl font-bold text-[#2F3A40] mt-8 mb-4">2. Description of Service</h2>
           <p className="text-[#6B7280] mb-6">
-            TryHomeJobFinder provides a carrier-compliant resume analysis and career coaching platform that allows businesses to verify customer resumes through a secure, pass-through verification page. The Service includes:
+            TrySolarSolutions provides a carrier-compliant solar assessment and energy coaching platform that allows homeowners to evaluate their solar potential through a secure, easy-to-use platform. The Service includes:
           </p>
           <ul className="list-disc pl-6 text-[#6B7280] mb-6 space-y-2">
-            <li>resume analysis and career coaching landing pages</li>
+            <li>Solar assessment and energy coaching landing pages</li>
             <li>Phone number verification flow</li>
             <li>Parameter preservation and redirect functionality</li>
             <li>Multi-brand support with customizable styling</li>
@@ -142,7 +142,7 @@ export default function TermsPage() {
           
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">7.1 Our Rights</h3>
           <p className="text-[#6B7280] mb-6">
-            The Service and all content, features, and functionality are owned by TryHomeJobFinder and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the Service without our express written permission.
+            The Service and all content, features, and functionality are owned by TrySolarSolutions and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the Service without our express written permission.
           </p>
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">7.2 Your Content</h3>
@@ -186,7 +186,7 @@ export default function TermsPage() {
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">10.2 Limitation of Liability</h3>
           <p className="text-[#6B7280] mb-6">
-            TO THE MAXIMUM EXTENT PERMITTED BY LAW, BWO VERIFY SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, TRYSOLARSOLUTIONS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
           </p>
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">10.3 Maximum Liability</h3>
@@ -196,7 +196,7 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold text-[#2F3A40] mt-8 mb-4">11. Indemnification</h2>
           <p className="text-[#6B7280] mb-6">
-            You agree to indemnify, defend, and hold harmless TryHomeJobFinder and its officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses (including reasonable attorney fees) arising from:
+            You agree to indemnify, defend, and hold harmless TrySolarSolutions and its officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses (including reasonable attorney fees) arising from:
           </p>
           <ul className="list-disc pl-6 text-[#6B7280] mb-6 space-y-2">
             <li>Your use of the Service</li>
@@ -248,7 +248,7 @@ export default function TermsPage() {
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">14.2 Entire Agreement</h3>
           <p className="text-[#6B7280] mb-6">
-            These Terms, together with our Privacy Policy, constitute the entire agreement between you and TryHomeJobFinder regarding the Service and supersede all prior agreements.
+            These Terms, together with our Privacy Policy, constitute the entire agreement between you and TrySolarSolutions regarding the Service and supersede all prior agreements.
           </p>
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">14.3 Severability</h3>
@@ -275,10 +275,10 @@ export default function TermsPage() {
           <p className="text-[#6B7280] mb-4">
             If you have any questions about these Terms, please contact us:
           </p>
-          <div className="bg-gray-50 rounded-lg p-6 mb-8">
-            <p className="text-[#6B7280] mb-2"><strong>Email:</strong> <a href="mailto:legal@tryhomejobfinder.com" className="text-[#3B82F6] hover:text-[#1d4ed8]">legal@tryhomejobfinder.com</a></p>
-            <p className="text-[#6B7280] mb-2"><strong>Support:</strong> <a href="mailto:support@tryhomejobfinder.com" className="text-[#3B82F6] hover:text-[#1d4ed8]">support@tryhomejobfinder.com</a></p>
-            <p className="text-[#6B7280]"><strong>Website:</strong> <a href="/" className="text-[#3B82F6] hover:text-[#1d4ed8]">https://tryhomejobfinder.com</a></p>
+          <div className="bg-white rounded-lg p-6 mb-8">
+            <p className="text-[#6B7280] mb-2"><strong>Email:</strong> <a href="mailto:legal@trysolarsolutions.com" className="text-[#3B82F6] hover:text-[#1d4ed8]">legal@trysolarsolutions.com</a></p>
+            <p className="text-[#6B7280] mb-2"><strong>Support:</strong> <a href="mailto:support@trysolarsolutions.com" className="text-[#3B82F6] hover:text-[#1d4ed8]">support@trysolarsolutions.com</a></p>
+            <p className="text-[#6B7280]"><strong>Website:</strong> <a href="/" className="text-[#3B82F6] hover:text-[#1d4ed8]">https://trysolarsolutions.com</a></p>
           </div>
 
         </div>
@@ -289,9 +289,9 @@ export default function TermsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">TryHomeJobFinder</h3>
+              <h3 className="text-xl font-bold mb-4">TrySolarSolutions</h3>
               <p className="text-gray-400">
-                Carrier-compliant resume analysis and career coaching for businesses.
+                Carrier-compliant solar assessment and energy coaching for homeowners.
               </p>
             </div>
             <div>
@@ -327,12 +327,12 @@ export default function TermsPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-gray-400">
-                support@tryhomejobfinder.com
+                support@trysolarsolutions.com
               </p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 TryHomeJobFinder. All rights reserved.</p>
+            <p>&copy; 2025 TrySolarSolutions. All rights reserved.</p>
           </div>
         </div>
       </footer>

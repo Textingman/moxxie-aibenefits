@@ -21,8 +21,6 @@ export default function SignupPage() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // TODO: Integrate with Web3Forms later
-    // For now, just simulate submission
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitStatus('success');
@@ -46,8 +44,8 @@ export default function SignupPage() {
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
                 <Image 
-                  src="/HJF_logo.png" 
-                  alt="TryHomeJobFinder" 
+                  src="/SolarSolutions.png" 
+                  alt="TrySolarSolutions" 
                   width={500} 
                   height={167}
                   className="h-32 w-auto"
@@ -56,19 +54,19 @@ export default function SignupPage() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/" className="text-[#6B7280] hover:text-[#3B82F6] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </Link>
-                <Link href="/about" className="text-[#6B7280] hover:text-[#3B82F6] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/about" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   About
                 </Link>
-                <Link href="/privacy" className="text-[#6B7280] hover:text-[#3B82F6] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/privacy" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   Privacy
                 </Link>
-                <Link href="/terms" className="text-[#6B7280] hover:text-[#3B82F6] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/terms" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   Terms
                 </Link>
-                <Link href="/signup" className="bg-[#3B82F6] text-white hover:bg-[#2563eb] px-4 py-2 rounded-md text-sm font-medium">
+                <Link href="/signup" className="text-white px-4 py-2 rounded-md text-sm font-medium" style={{ backgroundColor: '#F59E0B' }}>
                   Get Started
                 </Link>
               </div>
@@ -78,14 +76,14 @@ export default function SignupPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-white py-12">
+      <section style={{ background: '#FFFFFF' }} className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-extrabold text-[#2F3A40] mb-4">
-              Begin Your Journey with TryHomeJobFinder
+            <h1 className="text-4xl font-extrabold mb-4" style={{ color: '#1F2937' }}>
+              Talk to Your AI Solar Advisor — Free
             </h1>
-            <p className="text-xl text-[#6B7280] max-w-2xl mx-auto">
-              Complete the form below and our team will reach out within 24 hours to activate your account.
+            <p className="text-xl max-w-2xl mx-auto" style={{ color: '#6B7280' }}>
+              Tell us about your home and our AI agent will deliver personalized, unbiased solar education — no sales calls, no pressure, just honest answers.
             </p>
           </div>
         </div>
@@ -93,21 +91,22 @@ export default function SignupPage() {
 
       {/* Form Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12" style={{ border: '1px solid #E5E7EB' }}>
           {submitStatus === 'success' ? (
             <div className="text-center py-12">
-              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#D1FAE5' }}>
+                <svg className="w-10 h-10" style={{ color: '#22C55E' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h2 className="text-3xl font-bold text-[#2F3A40] mb-4">Request Received!</h2>
-              <p className="text-lg text-[#6B7280] mb-8">
+              <h2 className="text-3xl font-bold mb-4" style={{ color: '#1F2937' }}>Request Received!</h2>
+              <p className="text-lg mb-8" style={{ color: '#6B7280' }}>
                 Your submission has been received. Our team will reach out within 24 hours to begin your onboarding.
               </p>
               <Link
                 href="/"
-                className="inline-block px-6 py-3 bg-[#2563eb] text-white font-semibold rounded-lg hover:bg-[#1d4ed8] transition-colors"
+                className="inline-block px-6 py-3 text-white font-semibold rounded-lg transition-opacity hover:opacity-90"
+                style={{ backgroundColor: '#F59E0B' }}
               >
                 Return to Home
               </Link>
@@ -115,21 +114,21 @@ export default function SignupPage() {
           ) : (
             <>
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-[#2F3A40] mb-2">Register for TryHomeJobFinder</h2>
-                <p className="text-[#6B7280]">
-                  Fill out this form to begin authenticating your users with certainty.
+                <h2 className="text-2xl font-bold mb-2" style={{ color: '#1F2937' }}>Connect with Your AI Solar Agent</h2>
+                <p style={{ color: '#6B7280' }}>
+                  Fill out this form and our AI agent will provide you with unbiased, personalized solar education — completely free. No salespeople will contact you.
                 </p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Name Field */}
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium mb-2" style={{ color: '#1F2937' }}>
                     Full Name *
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <User className="h-5 w-5 text-gray-400" />
+                      <User className="h-5 w-5" style={{ color: '#9CA3AF' }} />
                     </div>
                     <input
                       type="text"
@@ -138,7 +137,8 @@ export default function SignupPage() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563eb] focus:border-transparent text-gray-900"
+                      className="block w-full pl-10 pr-3 py-3 rounded-lg text-gray-900"
+                      style={{ border: '1px solid #E5E7EB' }}
                       placeholder="John Doe"
                     />
                   </div>
@@ -146,12 +146,12 @@ export default function SignupPage() {
 
                 {/* Email Field */}
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Business Email *
+                  <label htmlFor="email" className="block text-sm font-medium mb-2" style={{ color: '#1F2937' }}>
+                    Email Address *
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <Mail className="h-5 w-5 text-gray-400" />
+                      <Mail className="h-5 w-5" style={{ color: '#9CA3AF' }} />
                     </div>
                     <input
                       type="email"
@@ -160,20 +160,21 @@ export default function SignupPage() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563eb] focus:border-transparent text-gray-900"
-                      placeholder="john@company.com"
+                      className="block w-full pl-10 pr-3 py-3 rounded-lg text-gray-900"
+                      style={{ border: '1px solid #E5E7EB' }}
+                      placeholder="john@example.com"
                     />
                   </div>
                 </div>
 
                 {/* Company Field */}
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                    Company Name *
+                  <label htmlFor="company" className="block text-sm font-medium mb-2" style={{ color: '#1F2937' }}>
+                    Home Address / City *
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <Building className="h-5 w-5 text-gray-400" />
+                      <Building className="h-5 w-5" style={{ color: '#9CA3AF' }} />
                     </div>
                     <input
                       type="text"
@@ -182,20 +183,21 @@ export default function SignupPage() {
                       required
                       value={formData.company}
                       onChange={handleChange}
-                      className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563eb] focus:border-transparent text-gray-900"
-                      placeholder="Acme Inc."
+                      className="block w-full pl-10 pr-3 py-3 rounded-lg text-gray-900"
+                      style={{ border: '1px solid #E5E7EB' }}
+                      placeholder="e.g. Austin, TX"
                     />
                   </div>
                 </div>
 
                 {/* Phone Field */}
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-medium mb-2" style={{ color: '#1F2937' }}>
                     Phone Number (Optional)
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <Phone className="h-5 w-5 text-gray-400" />
+                      <Phone className="h-5 w-5" style={{ color: '#9CA3AF' }} />
                     </div>
                     <input
                       type="tel"
@@ -203,7 +205,8 @@ export default function SignupPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563eb] focus:border-transparent text-gray-900"
+                      className="block w-full pl-10 pr-3 py-3 rounded-lg text-gray-900"
+                      style={{ border: '1px solid #E5E7EB' }}
                       placeholder="(555) 123-4567"
                     />
                   </div>
@@ -211,8 +214,8 @@ export default function SignupPage() {
 
                 {/* Message Field */}
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Describe your requirements (Optional)
+                  <label htmlFor="message" className="block text-sm font-medium mb-2" style={{ color: '#1F2937' }}>
+                    Tell Us About Your Solar Questions (Optional)
                   </label>
                   <textarea
                     id="message"
@@ -220,44 +223,47 @@ export default function SignupPage() {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className="block w-full px-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563eb] focus:border-transparent text-gray-900"
-                    placeholder="What are your authentication needs?"
+                    className="block w-full px-3 py-3 rounded-lg text-gray-900"
+                    style={{ border: '1px solid #E5E7EB' }}
+                    placeholder="Tell us about your home, energy usage, or any solar questions you have..."
                   />
                 </div>
 
                 {/* Consent Checkboxes */}
                 <div className="space-y-4">
                   {/* SMS Consent Checkbox */}
-                  <div className="bg-[#2F3A40] text-white rounded-lg p-6">
+                  <div className="rounded-lg p-6 text-white" style={{ backgroundColor: '#1F2937' }}>
                     <div className="flex items-start">
                       <input
                         type="checkbox"
                         id="sms-consent"
                         checked={accountNotifications}
                         onChange={(e) => setAccountNotifications(e.target.checked)}
-                        className="mt-1 h-4 w-4 text-[#3B82F6] focus:ring-[#2563eb] border-gray-300 rounded flex-shrink-0"
+                        className="mt-1 h-4 w-4 rounded flex-shrink-0"
+                        style={{ accentColor: '#F59E0B' }}
                       />
                       <label htmlFor="sms-consent" className="ml-3 text-sm leading-relaxed">
-                        By checking this box and submitting this form, you agree to receive account notification & customer care text messages from Home Job Finder. I understand I may opt out of SMS communication by replying 'STOP'. Reply HELP or email support@tryhomejobfinder.com for help. Message and Data rates may apply. Message frequency varies. Carriers are not liable for delayed or undelivered messages. Opting in to SMS is optional and not required to submit this form. All messages will be handled by Home Job Finder.
+                        By checking this box and submitting this form, you agree to receive account notification & customer care text messages from Solar Solutions. I understand I may opt out of SMS communication by replying 'STOP'. Reply HELP or email support@trysolarsolutions.com for help. Message and Data rates may apply. Message frequency varies. Carriers are not liable for delayed or undelivered messages. Opting in to SMS is optional and not required to submit this form. All messages will be handled by Solar Solutions.
                       </label>
                     </div>
                   </div>
 
                   {/* Terms & Privacy Policy Checkbox */}
-                  <div className="bg-gray-50 border border-gray-300 rounded-lg p-6">
+                  <div className="rounded-lg p-6" style={{ backgroundColor: '#FFFFFF', border: '1px solid #E5E7EB' }}>
                     <div className="flex items-start">
                       <input
                         type="checkbox"
                         id="terms-consent"
-                        className="mt-1 h-4 w-4 text-[#3B82F6] focus:ring-[#2563eb] border-gray-300 rounded flex-shrink-0"
+                        className="mt-1 h-4 w-4 rounded flex-shrink-0"
+                        style={{ accentColor: '#F59E0B' }}
                       />
-                      <label htmlFor="terms-consent" className="ml-3 text-sm leading-relaxed text-gray-700">
+                      <label htmlFor="terms-consent" className="ml-3 text-sm leading-relaxed" style={{ color: '#1F2937' }}>
                         I agree with the{' '}
-                        <Link href="/terms" className="text-[#3B82F6] hover:text-[#1d4ed8] font-medium underline">
+                        <Link href="/terms" className="font-medium underline" style={{ color: '#2F8FCB' }}>
                           Terms & Conditions
                         </Link>{' '}
                         and{' '}
-                        <Link href="/privacy" className="text-[#3B82F6] hover:text-[#1d4ed8] font-medium underline">
+                        <Link href="/privacy" className="font-medium underline" style={{ color: '#2F8FCB' }}>
                           Privacy Policy
                         </Link>
                         .
@@ -270,11 +276,8 @@ export default function SignupPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full py-4 px-6 rounded-lg text-lg font-semibold transition-all ${
-                    isSubmitting
-                      ? 'bg-gray-400 cursor-not-allowed'
-                      : 'bg-[#2563eb] hover:bg-[#1d4ed8] text-white shadow-lg hover:shadow-xl'
-                  }`}
+                  className="w-full py-4 px-6 rounded-lg text-lg font-semibold transition-opacity text-white"
+                  style={{ backgroundColor: isSubmitting ? '#9CA3AF' : '#F59E0B', cursor: isSubmitting ? 'not-allowed' : 'pointer' }}
                 >
                   {isSubmitting ? (
                     <span className="flex items-center justify-center">
@@ -285,7 +288,7 @@ export default function SignupPage() {
                       Submitting...
                     </span>
                   ) : (
-                    'Get Started'
+                    'Talk to the AI Agent — Free'
                   )}
                 </button>
               </form>
@@ -295,25 +298,25 @@ export default function SignupPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#2F3A40] text-white py-12 mt-20">
+      <footer className="text-white py-12 mt-20" style={{ backgroundColor: '#1F2937' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">TryHomeJobFinder</h3>
-              <p className="text-gray-400">
-                Secure career development solutions.
+              <h3 className="text-xl font-bold mb-4">TrySolarSolutions</h3>
+              <p style={{ color: '#9CA3AF' }}>
+                Unbiased AI-powered solar education for homeowners.
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Product</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/about" className="text-gray-400 hover:text-white">
+                  <Link href="/about" style={{ color: '#9CA3AF' }} className="hover:text-white">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href="/signup" className="text-gray-400 hover:text-white">
+                  <Link href="/signup" style={{ color: '#9CA3AF' }} className="hover:text-white">
                     Get Started
                   </Link>
                 </li>
@@ -323,12 +326,12 @@ export default function SignupPage() {
               <h4 className="font-semibold mb-4">Legal</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/privacy" className="text-gray-400 hover:text-white">
+                  <Link href="/privacy" style={{ color: '#9CA3AF' }} className="hover:text-white">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="/terms" className="text-gray-400 hover:text-white">
+                  <Link href="/terms" style={{ color: '#9CA3AF' }} className="hover:text-white">
                     Terms of Service
                   </Link>
                 </li>
@@ -336,13 +339,13 @@ export default function SignupPage() {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="text-gray-400">
-                support@tryhomejobfinder.com
+              <p style={{ color: '#9CA3AF' }}>
+                support@trysolarsolutions.com
               </p>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 TryHomeJobFinder. All rights reserved.</p>
+          <div className="mt-8 pt-8 text-center" style={{ borderTop: '1px solid #374151', color: '#9CA3AF' }}>
+            <p>&copy; 2025 TrySolarSolutions. All rights reserved.</p>
           </div>
         </div>
       </footer>

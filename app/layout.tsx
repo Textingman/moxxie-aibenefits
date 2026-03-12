@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TryHomeJobFinder - Resume Analysis & Job Prep",
-  description: "AI-powered resume analysis and job application tips to help you land your dream job",
+  title: "TrySolarSolutions - Your AI Agent for Solar Education",
+  description: "Meet your personal AI solar advisor. Get instant, unbiased answers to all your solar questions — panels, costs, incentives, and more. No salespeople. No pressure.",
 };
 
 export default function RootLayout({
