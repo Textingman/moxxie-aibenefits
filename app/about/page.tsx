@@ -1,47 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Bot, ShieldCheck, BookOpen } from 'lucide-react';
+import Navbar from '../components/Navbar';
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#FFFFFF' }}>
-      {/* Navigation */}
-      <nav className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-32">
-            <div className="flex items-center">
-              <Link href="/" className="flex-shrink-0">
-                <Image
-                  src="/new-logo.png"
-                  alt="AI Benefits Agent"
-                  width={254}
-                  height={140}
-                  className="h-10 w-auto"
-                />
-              </Link>
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
-                  Home
-                </Link>
-                <Link href="/about" style={{ color: '#1F4E79' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
-                  About
-                </Link>
-                <Link href="/privacy" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
-                  Privacy
-                </Link>
-                <Link href="/terms" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
-                  Terms
-                </Link>
-                <Link href="/signup" className="text-white px-4 py-2 rounded-md text-sm font-medium" style={{ backgroundColor: '#5E8F5E' }}>
-                  Talk to Our AI
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section style={{ backgroundColor: '#F5F7FA' }} className="py-20">
