@@ -14,6 +14,7 @@ export default function SignupPage() {
     message: ''
   });
   const [accountNotifications, setAccountNotifications] = useState(false);
+  const [customerCare, setCustomerCare] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
@@ -36,19 +37,19 @@ export default function SignupPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen" style={{ backgroundColor: '#FFFFFF' }}>
       {/* Navigation */}
       <nav className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-32">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <Image 
-                  src="/SolarSolutions.png" 
-                  alt="TrySolarSolutions" 
-                  width={500} 
-                  height={167}
-                  className="h-32 w-auto"
+                <Image
+                  src="/NEWLOGO.png"
+                  alt="AI Benefits Agent"
+                  width={254}
+                  height={140}
+                  className="h-10 w-auto"
                 />
               </Link>
             </div>
@@ -66,7 +67,7 @@ export default function SignupPage() {
                 <Link href="/terms" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   Terms
                 </Link>
-                <Link href="/signup" className="text-white px-4 py-2 rounded-md text-sm font-medium" style={{ backgroundColor: '#F59E0B' }}>
+                <Link href="/signup" className="text-white px-4 py-2 rounded-md text-sm font-medium" style={{ backgroundColor: '#5E8F5E' }}>
                   Get Started
                 </Link>
               </div>
@@ -76,14 +77,14 @@ export default function SignupPage() {
       </nav>
 
       {/* Hero Section */}
-      <section style={{ background: '#FFFFFF' }} className="py-12">
+      <section style={{ backgroundColor: '#F5F7FA' }} className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold mb-4" style={{ color: '#1F2937' }}>
-              Talk to Your AI Solar Advisor — Free
+              Talk to Your AI Benefits Advisor — Free
             </h1>
             <p className="text-xl max-w-2xl mx-auto" style={{ color: '#6B7280' }}>
-              Tell us about your home and our AI agent will deliver personalized, unbiased solar education — no sales calls, no pressure, just honest answers.
+              Tell us about your situation and our AI agent will deliver personalized, unbiased benefits education — no sales calls, no pressure, just honest answers.
             </p>
           </div>
         </div>
@@ -106,7 +107,7 @@ export default function SignupPage() {
               <Link
                 href="/"
                 className="inline-block px-6 py-3 text-white font-semibold rounded-lg transition-opacity hover:opacity-90"
-                style={{ backgroundColor: '#F59E0B' }}
+                style={{ backgroundColor: '#5E8F5E' }}
               >
                 Return to Home
               </Link>
@@ -114,9 +115,9 @@ export default function SignupPage() {
           ) : (
             <>
               <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-2" style={{ color: '#1F2937' }}>Connect with Your AI Solar Agent</h2>
+                <h2 className="text-2xl font-bold mb-2" style={{ color: '#1F2937' }}>Connect with Your AI Benefits Agent</h2>
                 <p style={{ color: '#6B7280' }}>
-                  Fill out this form and our AI agent will provide you with unbiased, personalized solar education — completely free. No salespeople will contact you.
+                  Fill out this form and our AI agent will provide you with unbiased, personalized benefits education — completely free. No salespeople will contact you.
                 </p>
               </div>
 
@@ -167,10 +168,10 @@ export default function SignupPage() {
                   </div>
                 </div>
 
-                {/* Company Field */}
+                {/* Location Field */}
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium mb-2" style={{ color: '#1F2937' }}>
-                    Home Address / City *
+                    City / State *
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -215,7 +216,7 @@ export default function SignupPage() {
                 {/* Message Field */}
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2" style={{ color: '#1F2937' }}>
-                    Tell Us About Your Solar Questions (Optional)
+                    Tell Us About Your Benefits Questions (Optional)
                   </label>
                   <textarea
                     id="message"
@@ -225,25 +226,42 @@ export default function SignupPage() {
                     onChange={handleChange}
                     className="block w-full px-3 py-3 rounded-lg text-gray-900"
                     style={{ border: '1px solid #E5E7EB' }}
-                    placeholder="Tell us about your home, energy usage, or any solar questions you have..."
+                    placeholder="Tell us about your benefits situation, coverage needs, or any questions you have..."
                   />
                 </div>
 
                 {/* Consent Checkboxes */}
                 <div className="space-y-4">
-                  {/* SMS Consent Checkbox */}
+                  {/* SMS Account Notifications Checkbox */}
                   <div className="rounded-lg p-6 text-white" style={{ backgroundColor: '#1F2937' }}>
                     <div className="flex items-start">
                       <input
                         type="checkbox"
-                        id="sms-consent"
+                        id="sms-account-notifications"
                         checked={accountNotifications}
                         onChange={(e) => setAccountNotifications(e.target.checked)}
                         className="mt-1 h-4 w-4 rounded flex-shrink-0"
                         style={{ accentColor: '#F59E0B' }}
                       />
-                      <label htmlFor="sms-consent" className="ml-3 text-sm leading-relaxed">
-                        By checking this box and submitting this form, you agree to receive account notification & customer care text messages from Solar Solutions. I understand I may opt out of SMS communication by replying 'STOP'. Reply HELP or email support@trysolarsolutions.com for help. Message and Data rates may apply. Message frequency varies. Carriers are not liable for delayed or undelivered messages. Opting in to SMS is optional and not required to submit this form. All messages will be handled by Solar Solutions.
+                      <label htmlFor="sms-account-notifications" className="ml-3 text-sm leading-relaxed">
+                        By checking this box and submitting this form, you agree to receive <strong>account notification</strong> text messages from AI Benefits Agent. I understand I may opt out of SMS communication by replying 'STOP'. Reply HELP or email support@aibenefitsagent.com for help. Message and Data rates may apply. Message frequency varies. Carriers are not liable for delayed or undelivered messages. Opting in to SMS is optional and not required to submit this form. All messages will be handled by AI Benefits Agent.
+                      </label>
+                    </div>
+                  </div>
+
+                  {/* SMS Customer Care Checkbox */}
+                  <div className="rounded-lg p-6 text-white" style={{ backgroundColor: '#1F2937' }}>
+                    <div className="flex items-start">
+                      <input
+                        type="checkbox"
+                        id="sms-customer-care"
+                        checked={customerCare}
+                        onChange={(e) => setCustomerCare(e.target.checked)}
+                        className="mt-1 h-4 w-4 rounded flex-shrink-0"
+                        style={{ accentColor: '#F59E0B' }}
+                      />
+                      <label htmlFor="sms-customer-care" className="ml-3 text-sm leading-relaxed">
+                        By checking this box and submitting this form, you agree to receive <strong>customer care</strong> text messages from AI Benefits Agent. I understand I may opt out of SMS communication by replying 'STOP'. Reply HELP or email support@aibenefitsagent.com for help. Message and Data rates may apply. Message frequency varies. Carriers are not liable for delayed or undelivered messages. Opting in to SMS is optional and not required to submit this form. All messages will be handled by AI Benefits Agent.
                       </label>
                     </div>
                   </div>
@@ -259,11 +277,11 @@ export default function SignupPage() {
                       />
                       <label htmlFor="terms-consent" className="ml-3 text-sm leading-relaxed" style={{ color: '#1F2937' }}>
                         I agree with the{' '}
-                        <Link href="/terms" className="font-medium underline" style={{ color: '#2F8FCB' }}>
+                        <Link href="/terms" className="font-medium underline" style={{ color: '#2F6FA3' }}>
                           Terms & Conditions
                         </Link>{' '}
                         and{' '}
-                        <Link href="/privacy" className="font-medium underline" style={{ color: '#2F8FCB' }}>
+                        <Link href="/privacy" className="font-medium underline" style={{ color: '#2F6FA3' }}>
                           Privacy Policy
                         </Link>
                         .
@@ -277,7 +295,7 @@ export default function SignupPage() {
                   type="submit"
                   disabled={isSubmitting}
                   className="w-full py-4 px-6 rounded-lg text-lg font-semibold transition-opacity text-white"
-                  style={{ backgroundColor: isSubmitting ? '#9CA3AF' : '#F59E0B', cursor: isSubmitting ? 'not-allowed' : 'pointer' }}
+                  style={{ backgroundColor: isSubmitting ? '#9CA3AF' : '#5E8F5E', cursor: isSubmitting ? 'not-allowed' : 'pointer' }}
                 >
                   {isSubmitting ? (
                     <span className="flex items-center justify-center">
@@ -302,9 +320,9 @@ export default function SignupPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">TrySolarSolutions</h3>
+              <h3 className="text-xl font-bold mb-4">AI Benefits Agent</h3>
               <p style={{ color: '#9CA3AF' }}>
-                Unbiased AI-powered solar education for homeowners.
+                Unbiased AI-powered benefits education for everyone.
               </p>
             </div>
             <div>
@@ -340,12 +358,12 @@ export default function SignupPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p style={{ color: '#9CA3AF' }}>
-                support@trysolarsolutions.com
+                support@aibenefitsagent.com
               </p>
             </div>
           </div>
           <div className="mt-8 pt-8 text-center" style={{ borderTop: '1px solid #374151', color: '#9CA3AF' }}>
-            <p>&copy; 2025 TrySolarSolutions. All rights reserved.</p>
+            <p>&copy; 2025 AI Benefits Agent. All rights reserved.</p>
           </div>
         </div>
       </footer>
