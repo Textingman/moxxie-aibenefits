@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Bot, ShieldCheck, BookOpen } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function AboutPage() {
   return (
@@ -175,58 +176,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="text-white py-12" style={{ backgroundColor: '#1F2937' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">AI Benefits Agent</h3>
-              <p style={{ color: '#9CA3AF' }}>
-                Your AI agent for unbiased benefits education.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Product</h4>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/about" style={{ color: '#9CA3AF' }} className="hover:text-white">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/signup" style={{ color: '#9CA3AF' }} className="hover:text-white">
-                    Talk to AI
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Legal</h4>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/privacy" style={{ color: '#9CA3AF' }} className="hover:text-white">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/terms" style={{ color: '#9CA3AF' }} className="hover:text-white">
-                    Terms of Service
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <p style={{ color: '#9CA3AF' }}>
-                support@aibenefitsagent.com
-              </p>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 text-center" style={{ borderTop: '1px solid #374151', color: '#9CA3AF' }}>
-            <p>&copy; 2025 AI Benefits Agent. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
