@@ -3,37 +3,37 @@ import Image from 'next/image';
 
 export default function TermsPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen" style={{ backgroundColor: '#FFFFFF' }}>
       {/* Navigation */}
       <nav className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-32">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <Image 
-                  src="/SolarSolutions.png" 
-                  alt="TrySolarSolutions" 
-                  width={500} 
-                  height={167}
-                  className="h-32 w-auto"
+                <Image
+                  src="/new-logo.png"
+                  alt="AI Benefits Agent"
+                  width={254}
+                  height={140}
+                  className="h-10 w-auto"
                 />
               </Link>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/" className="text-[#6B7280] hover:text-[#3B82F6] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </Link>
-                <Link href="/about" className="text-[#6B7280] hover:text-[#3B82F6] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/about" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   About
                 </Link>
-                <Link href="/privacy" className="text-[#6B7280] hover:text-[#3B82F6] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/privacy" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   Privacy
                 </Link>
-                <Link href="/terms" className="text-[#2F3A40] hover:text-[#3B82F6] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/terms" style={{ color: '#1F4E79' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   Terms
                 </Link>
-                <Link href="/signup" className="bg-[#3B82F6] text-white hover:bg-[#2563eb] px-4 py-2 rounded-md text-sm font-medium">
+                <Link href="/signup" className="text-white px-4 py-2 rounded-md text-sm font-medium" style={{ backgroundColor: '#5E8F5E' }}>
                   Get Started
                 </Link>
               </div>
@@ -43,10 +43,10 @@ export default function TermsPage() {
       </nav>
 
       {/* Header */}
-      <section className="bg-white py-12">
+      <section style={{ backgroundColor: '#F5F7FA' }} className="py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold text-[#2F3A40] mb-4">Terms of Service</h1>
-          <p className="text-lg text-[#6B7280]">
+          <h1 className="text-4xl font-extrabold mb-4" style={{ color: '#1F2937' }}>Terms of Service</h1>
+          <p className="text-lg" style={{ color: '#6B7280' }}>
             Last Updated: December 30, 2025
           </p>
         </div>
@@ -56,17 +56,17 @@ export default function TermsPage() {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="prose prose-lg max-w-none">
           
-          <h2 className="text-2xl font-bold text-[#2F3A40] mt-8 mb-4">1. Acceptance of Terms</h2>
-          <p className="text-[#6B7280] mb-6">
-            By accessing or using TrySolarSolutions' solar assessment and energy coaching service ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not access or use the Service. These Terms apply to all users of the Service, including businesses, developers, and end users.
+          <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#1F2937' }}>1. Acceptance of Terms</h2>
+          <p className="mb-6" style={{ color: '#6B7280' }}>
+            By accessing or using AI Benefits Agent's benefits education service ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not access or use the Service. These Terms apply to all users of the Service, including businesses, developers, and end users.
           </p>
 
           <h2 className="text-2xl font-bold text-[#2F3A40] mt-8 mb-4">2. Description of Service</h2>
           <p className="text-[#6B7280] mb-6">
-            TrySolarSolutions provides a carrier-compliant solar assessment and energy coaching platform that allows homeowners to evaluate their solar potential through a secure, easy-to-use platform. The Service includes:
+            AI Benefits Agent provides a carrier-compliant benefits education platform that allows individuals to learn about their benefits options through a secure, easy-to-use platform. The Service includes:
           </p>
           <ul className="list-disc pl-6 text-[#6B7280] mb-6 space-y-2">
-            <li>Solar assessment and energy coaching landing pages</li>
+            <li>Benefits education and AI-powered guidance</li>
             <li>Phone number verification flow</li>
             <li>Parameter preservation and redirect functionality</li>
             <li>Multi-brand support with customizable styling</li>
@@ -142,7 +142,7 @@ export default function TermsPage() {
           
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">7.1 Our Rights</h3>
           <p className="text-[#6B7280] mb-6">
-            The Service and all content, features, and functionality are owned by TrySolarSolutions and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the Service without our express written permission.
+            The Service and all content, features, and functionality are owned by AI Benefits Agent and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the Service without our express written permission.
           </p>
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">7.2 Your Content</h3>
@@ -186,7 +186,7 @@ export default function TermsPage() {
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">10.2 Limitation of Liability</h3>
           <p className="text-[#6B7280] mb-6">
-            TO THE MAXIMUM EXTENT PERMITTED BY LAW, TRYSOLARSOLUTIONS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, AI BENEFITS AGENT SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
           </p>
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">10.3 Maximum Liability</h3>
@@ -196,7 +196,7 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold text-[#2F3A40] mt-8 mb-4">11. Indemnification</h2>
           <p className="text-[#6B7280] mb-6">
-            You agree to indemnify, defend, and hold harmless TrySolarSolutions and its officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses (including reasonable attorney fees) arising from:
+            You agree to indemnify, defend, and hold harmless AI Benefits Agent and its officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses (including reasonable attorney fees) arising from:
           </p>
           <ul className="list-disc pl-6 text-[#6B7280] mb-6 space-y-2">
             <li>Your use of the Service</li>
@@ -248,7 +248,7 @@ export default function TermsPage() {
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">14.2 Entire Agreement</h3>
           <p className="text-[#6B7280] mb-6">
-            These Terms, together with our Privacy Policy, constitute the entire agreement between you and TrySolarSolutions regarding the Service and supersede all prior agreements.
+            These Terms, together with our Privacy Policy, constitute the entire agreement between you and AI Benefits Agent regarding the Service and supersede all prior agreements.
           </p>
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">14.3 Severability</h3>
@@ -276,9 +276,9 @@ export default function TermsPage() {
             If you have any questions about these Terms, please contact us:
           </p>
           <div className="bg-white rounded-lg p-6 mb-8">
-            <p className="text-[#6B7280] mb-2"><strong>Email:</strong> <a href="mailto:legal@trysolarsolutions.com" className="text-[#3B82F6] hover:text-[#1d4ed8]">legal@trysolarsolutions.com</a></p>
-            <p className="text-[#6B7280] mb-2"><strong>Support:</strong> <a href="mailto:support@trysolarsolutions.com" className="text-[#3B82F6] hover:text-[#1d4ed8]">support@trysolarsolutions.com</a></p>
-            <p className="text-[#6B7280]"><strong>Website:</strong> <a href="/" className="text-[#3B82F6] hover:text-[#1d4ed8]">https://trysolarsolutions.com</a></p>
+            <p className="text-[#6B7280] mb-2"><strong>Email:</strong> <a href="mailto:legal@aibenefitsagent.com" className="text-[#3B82F6] hover:text-[#1d4ed8]">legal@aibenefitsagent.com</a></p>
+            <p className="text-[#6B7280] mb-2"><strong>Support:</strong> <a href="mailto:support@aibenefitsagent.com" className="text-[#3B82F6] hover:text-[#1d4ed8]">support@aibenefitsagent.com</a></p>
+            <p className="text-[#6B7280]"><strong>Website:</strong> <a href="/" className="text-[#3B82F6] hover:text-[#1d4ed8]">https://aibenefitsagent.com</a></p>
           </div>
 
         </div>
@@ -289,9 +289,9 @@ export default function TermsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">TrySolarSolutions</h3>
+              <h3 className="text-xl font-bold mb-4">AI Benefits Agent</h3>
               <p className="text-gray-400">
-                Carrier-compliant solar assessment and energy coaching for homeowners.
+                Carrier-compliant benefits education for everyone.
               </p>
             </div>
             <div>
@@ -327,12 +327,12 @@ export default function TermsPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-gray-400">
-                support@trysolarsolutions.com
+                support@aibenefitsagent.com
               </p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 TrySolarSolutions. All rights reserved.</p>
+            <p>&copy; 2025 AI Benefits Agent. All rights reserved.</p>
           </div>
         </div>
       </footer>

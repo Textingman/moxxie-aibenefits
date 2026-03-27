@@ -45,7 +45,7 @@ export default function SignupPage() {
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
                 <Image
-                  src="/NEWLOGO.png"
+                  src="/new-logo.png"
                   alt="AI Benefits Agent"
                   width={254}
                   height={140}
@@ -244,7 +244,7 @@ export default function SignupPage() {
                         style={{ accentColor: '#F59E0B' }}
                       />
                       <label htmlFor="sms-account-notifications" className="ml-3 text-sm leading-relaxed">
-                        By checking this box and submitting this form, you agree to receive <strong>account notification</strong> text messages from AI Benefits Agent. I understand I may opt out of SMS communication by replying 'STOP'. Reply HELP or email support@aibenefitsagent.com for help. Message and Data rates may apply. Message frequency varies. Carriers are not liable for delayed or undelivered messages. Opting in to SMS is optional and not required to submit this form. All messages will be handled by AI Benefits Agent.
+                        By checking this box and submitting this form, you agree to receive transactional account notification text messages from AI Benefits Agent. I understand I may opt out of SMS communication by replying 'STOP'. Reply HELP or email support@aibenefitsagent.com for help. Message and Data rates may apply. Message frequency varies. Carriers are not liable for delayed or undelivered messages. Opting in to SMS is optional and not required to submit this form. All messages will be handled by AI Benefits Agent.
                       </label>
                     </div>
                   </div>

@@ -3,19 +3,19 @@ import Image from 'next/image';
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen" style={{ backgroundColor: '#FFFFFF' }}>
       {/* Navigation */}
       <nav className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-32">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <Image 
-                  src="/SolarSolutions.png" 
-                  alt="TrySolarSolutions" 
-                  width={500} 
-                  height={167}
-                  className="h-32 w-auto"
+                <Image
+                  src="/new-logo.png"
+                  alt="AI Benefits Agent"
+                  width={254}
+                  height={140}
+                  className="h-10 w-auto"
                 />
               </Link>
             </div>
@@ -27,13 +27,13 @@ export default function PrivacyPage() {
                 <Link href="/about" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   About
                 </Link>
-                <Link href="/privacy" style={{ color: '#1E6FA8' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/privacy" style={{ color: '#1F4E79' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   Privacy
                 </Link>
                 <Link href="/terms" style={{ color: '#6B7280' }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                   Terms
                 </Link>
-                <Link href="/signup" className="text-white px-4 py-2 rounded-md text-sm font-medium" style={{ backgroundColor: '#F59E0B' }}>
+                <Link href="/signup" className="text-white px-4 py-2 rounded-md text-sm font-medium" style={{ backgroundColor: '#5E8F5E' }}>
                   Get Started
                 </Link>
               </div>
@@ -43,7 +43,7 @@ export default function PrivacyPage() {
       </nav>
 
       {/* Header */}
-      <section style={{ background: '#FFFFFF' }} className="py-12">
+      <section style={{ backgroundColor: '#F5F7FA' }} className="py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-extrabold mb-4" style={{ color: '#1F2937' }}>Privacy Policy</h1>
           <p className="text-lg" style={{ color: '#6B7280' }}>
@@ -58,7 +58,7 @@ export default function PrivacyPage() {
           
           <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#1F2937' }}>1. Introduction</h2>
           <p className="mb-6" style={{ color: '#6B7280' }}>
-            TrySolarSolutions ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our solar assessment and energy coaching service and website.
+            AI Benefits Agent ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our benefits education service and website at aibenefitsagent.com.
           </p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#1F2937' }}>2. Information We Collect</h2>
@@ -67,7 +67,7 @@ export default function PrivacyPage() {
           <p className="mb-4" style={{ color: '#6B7280' }}>When you sign up for our service, we may collect:</p>
           <ul className="list-disc pl-6 mb-6 space-y-2" style={{ color: '#6B7280' }}>
             <li>Name and contact information (email, phone)</li>
-            <li>Home address and property information</li>
+            <li>Location information (city/state)</li>
             <li>Account credentials</li>
             <li>Payment information (processed by third-party payment processors)</li>
           </ul>
@@ -88,13 +88,13 @@ export default function PrivacyPage() {
 
           <h3 className="text-xl font-semibold mt-6 mb-3" style={{ color: '#1F2937' }}>2.4 Mobile Information Sharing</h3>
           <p className="mb-6" style={{ color: '#6B7280' }}>
-            <strong>No mobile information will be shared or sold to third parties for marketing purposes.</strong> We are committed to protecting your mobile information and will only use it for the purposes outlined in this Privacy Policy, such as providing our solar assessment service and communicating with you about your account.
+            <strong>No mobile information will be shared or sold to third parties for marketing purposes.</strong> We are committed to protecting your mobile information and will only use it for the purposes outlined in this Privacy Policy, such as providing our benefits education service and communicating with you about your account.
           </p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#1F2937' }}>3. How We Use Your Information</h2>
           <p className="mb-4" style={{ color: '#6B7280' }}>We use the information we collect to:</p>
           <ul className="list-disc pl-6 mb-6 space-y-2" style={{ color: '#6B7280' }}>
-            <li>Provide and maintain our solar assessment service</li>
+            <li>Provide and maintain our benefits education service</li>
             <li>Process your transactions and manage your account</li>
             <li>Send you service-related communications</li>
             <li>Improve our service and develop new features</li>
@@ -153,7 +153,7 @@ export default function PrivacyPage() {
             <li><strong>Opt-out:</strong> Opt out of marketing communications</li>
           </ul>
           <p className="mb-6" style={{ color: '#6B7280' }}>
-            To exercise these rights, please contact us at <a href="mailto:privacy@trysolarsolutions.com" className="font-medium" style={{ color: '#2F8FCB' }}>privacy@trysolarsolutions.com</a>.
+            To exercise these rights, please contact us at <a href="mailto:privacy@aibenefitsagent.com" className="font-medium" style={{ color: '#2F8FCB' }}>privacy@aibenefitsagent.com</a>.
           </p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#1F2937' }}>8. Cookies and Tracking Technologies</h2>
@@ -186,9 +186,9 @@ export default function PrivacyPage() {
             If you have any questions about this Privacy Policy or our privacy practices, please contact us:
           </p>
           <div className="rounded-lg p-6 mb-8" style={{ backgroundColor: '#FFFFFF', border: '1px solid #E5E7EB' }}>
-            <p className="mb-2" style={{ color: '#6B7280' }}><strong>Email:</strong> <a href="mailto:privacy@trysolarsolutions.com" className="font-medium" style={{ color: '#2F8FCB' }}>privacy@trysolarsolutions.com</a></p>
-            <p className="mb-2" style={{ color: '#6B7280' }}><strong>Support:</strong> <a href="mailto:support@trysolarsolutions.com" className="font-medium" style={{ color: '#2F8FCB' }}>support@trysolarsolutions.com</a></p>
-            <p style={{ color: '#6B7280' }}><strong>Website:</strong> <a href="/" className="font-medium" style={{ color: '#2F8FCB' }}>https://trysolarsolutions.com</a></p>
+            <p className="mb-2" style={{ color: '#6B7280' }}><strong>Email:</strong> <a href="mailto:privacy@aibenefitsagent.com" className="font-medium" style={{ color: '#2F8FCB' }}>privacy@aibenefitsagent.com</a></p>
+            <p className="mb-2" style={{ color: '#6B7280' }}><strong>Support:</strong> <a href="mailto:support@aibenefitsagent.com" className="font-medium" style={{ color: '#2F8FCB' }}>support@aibenefitsagent.com</a></p>
+            <p style={{ color: '#6B7280' }}><strong>Website:</strong> <a href="/" className="font-medium" style={{ color: '#2F8FCB' }}>https://aibenefitsagent.com</a></p>
           </div>
 
         </div>
@@ -199,9 +199,9 @@ export default function PrivacyPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">TrySolarSolutions</h3>
+              <h3 className="text-xl font-bold mb-4">AI Benefits Agent</h3>
               <p style={{ color: '#9CA3AF' }}>
-                Unbiased AI-powered solar education for homeowners.
+                Unbiased AI-powered benefits education for everyone.
               </p>
             </div>
             <div>
@@ -237,12 +237,12 @@ export default function PrivacyPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p style={{ color: '#9CA3AF' }}>
-                support@trysolarsolutions.com
+                support@aibenefitsagent.com
               </p>
             </div>
           </div>
           <div className="mt-8 pt-8 text-center" style={{ borderTop: '1px solid #374151', color: '#9CA3AF' }}>
-            <p>&copy; 2025 TrySolarSolutions. All rights reserved.</p>
+            <p>&copy; 2025 AI Benefits Agent. All rights reserved.</p>
           </div>
         </div>
       </footer>
