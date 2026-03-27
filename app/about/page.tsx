@@ -91,34 +91,54 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="text-center p-6 rounded-xl border bg-white" style={{ borderColor: '#E5E7EB' }}>
               <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#DBEAFE' }}>
-                <span className="text-xl">🏥</span>
+                <span className="text-xl">🔍</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>Health Benefits</h3>
+              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>Unclaimed Benefits</h3>
               <p style={{ color: '#6B7280' }}>
-                How health insurance works, plan types, coverage details, and what to expect from enrollment.
-              </p>
-            </div>
-
-            <div className="text-center p-6 rounded-xl border bg-white" style={{ borderColor: '#E5E7EB' }}>
-              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#DBEAFE' }}>
-                <span className="text-xl">💰</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>Costs & Eligibility</h3>
-              <p style={{ color: '#6B7280' }}>
-                Premiums, deductibles, copays, subsidies, and eligibility requirements explained clearly.
+                Discover government programs, employer benefits, and state assistance you may be entitled to but haven't claimed yet.
               </p>
             </div>
 
             <div className="text-center p-6 rounded-xl border bg-white" style={{ borderColor: '#E5E7EB' }}>
               <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#dcfce7' }}>
-                <span className="text-xl">📋</span>
+                <span className="text-xl">🛒</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>Enrollment Guidance</h3>
+              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>Grocery Benefits</h3>
               <p style={{ color: '#6B7280' }}>
-                How to navigate open enrollment, qualifying life events, and choosing the right plan for your needs.
+                Learn about SNAP, WIC, and other food assistance programs that can help cover your grocery costs.
+              </p>
+            </div>
+
+            <div className="text-center p-6 rounded-xl border bg-white" style={{ borderColor: '#E5E7EB' }}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#DBEAFE' }}>
+                <span className="text-xl">🏆</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>Grants</h3>
+              <p style={{ color: '#6B7280' }}>
+                Explore federal, state, and local grants for housing, education, healthcare, small business, and more.
+              </p>
+            </div>
+
+            <div className="text-center p-6 rounded-xl border bg-white" style={{ borderColor: '#E5E7EB' }}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#FEF3C7' }}>
+                <span className="text-xl">👴</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>Senior Benefits</h3>
+              <p style={{ color: '#6B7280' }}>
+                Medicare, Social Security, Medicaid, utility assistance, property tax relief, and other programs for seniors.
+              </p>
+            </div>
+
+            <div className="text-center p-6 rounded-xl border bg-white" style={{ borderColor: '#E5E7EB' }}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#dcfce7' }}>
+                <span className="text-xl">💵</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>Financial Benefits</h3>
+              <p style={{ color: '#6B7280' }}>
+                Utility bill assistance (LIHEAP), housing aid, Social Security Disability, and other financial assistance programs.
               </p>
             </div>
 
@@ -126,9 +146,9 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#DBEAFE' }}>
                 <span className="text-xl">🛡️</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>Additional Benefits</h3>
+              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F2937' }}>And Much More</h3>
               <p style={{ color: '#6B7280' }}>
-                Dental, vision, life insurance, disability, retirement plans, and other supplemental benefits.
+                Health insurance, dental, vision, disability, retirement plans, and any other benefits questions you have.
               </p>
             </div>
           </div>

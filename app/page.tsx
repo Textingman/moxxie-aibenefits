@@ -155,10 +155,11 @@ export default function HomePage() {
 
           <div className="space-y-4">
             {[
-              { q: "What benefits am I eligible for?", a: "Eligibility depends on your employment status, location, and plan type. I can walk you through a personalized analysis based on your specific situation to identify all the benefits available to you..." },
-              { q: "How do I enroll in my health insurance?", a: "Enrollment typically happens during open enrollment periods or after a qualifying life event. I can guide you step-by-step through the process, explain your plan options, and help you choose the right coverage for your needs..." },
-              { q: "What's the difference between an HMO and a PPO?", a: "An HMO requires you to use in-network providers and get referrals for specialists, while a PPO gives you more flexibility to see any doctor without a referral. Here's how to decide which is right for you..." },
-              { q: "Can you help me understand my benefits package?", a: "Absolutely. Share the key details — health, dental, vision, retirement, and any other benefits — and I'll explain what each one means, what it covers, and how to make the most of your package..." },
+              { q: "Do I have any unclaimed benefits I don't know about?", a: "Many people are sitting on unclaimed benefits — from government programs, employer plans, or state assistance — without even knowing it. I can help you identify what you may be entitled to based on your age, income, location, and situation..." },
+              { q: "Are there grocery benefits I can get help with?", a: "Yes! There are several programs that can help cover grocery costs, including SNAP (food stamps), WIC for women and children, and various state-level food assistance programs. I can walk you through eligibility requirements and how to apply..." },
+              { q: "What grants are available that I might qualify for?", a: "There are thousands of federal, state, and local grants available for housing, education, small business, healthcare, and more. I can help you identify grants you may qualify for based on your specific circumstances and guide you through the application process..." },
+              { q: "What senior benefits am I entitled to?", a: "Seniors may be eligible for a wide range of benefits including Medicare, Social Security, Medicaid, SNAP, utility assistance, property tax relief, and more. I can help you understand exactly what you qualify for and how to access these programs..." },
+              { q: "What financial benefits or assistance programs can I access?", a: "There are many financial assistance programs available — from utility bill help (LIHEAP) to housing assistance, Medicaid, Social Security Disability, and more. Tell me about your situation and I'll identify the financial benefits you may be missing..." },
             ].map((item, i) => (
               <div key={i} className="rounded-xl overflow-hidden border" style={{ borderColor: '#E5E7EB' }}>
                 <div className="p-4 flex items-start gap-3" style={{ backgroundColor: '#F5F7FA' }}>
