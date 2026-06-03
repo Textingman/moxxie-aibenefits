@@ -27,17 +27,26 @@ export default function TermsPage() {
             By accessing or using AI Benefits Agent's AI-powered benefits education service ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not access or use the Service. These Terms apply to all users of the Service.
           </p>
 
-          <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#1F2937' }}>2. Description of Service</h2>
-          <p className="mb-6" style={{ color: '#6B7280' }}>
-            AI Benefits Agent provides an AI-powered benefits education platform that helps individuals understand their benefits options through personalized, unbiased guidance. The Service includes:
+          <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#1F2937' }}>2. SMS Messaging</h2>
+          <p className="mb-4" style={{ color: '#6B7280' }}>
+            AI Benefits Agent offers optional SMS messaging programs as part of the Service. By opting in, you agree to receive SMS messages as described below. Full details are available on our dedicated <Link href="/sms-terms" className="font-medium" style={{ color: '#2F6FA3' }}>SMS Terms &amp; Conditions</Link> page.
           </p>
-          <ul className="list-disc pl-6 mb-6 space-y-2" style={{ color: '#6B7280' }}>
-            <li>AI-powered benefits education and guidance</li>
-            <li>Personalized answers to benefits questions</li>
-            <li>Enrollment guidance and eligibility information</li>
-            <li>Optional SMS notifications (account notifications and customer care)</li>
-            <li>Phone number verification flow</li>
+          <ul className="list-disc pl-6 mb-4 space-y-2" style={{ color: '#6B7280' }}>
+            <li><strong>Account Notifications:</strong> Transactional messages related to your account, including verification codes and enrollment confirmations.</li>
+            <li><strong>Customer Care Messages:</strong> Support-related messages to assist with your benefits inquiries.</li>
           </ul>
+          <p className="mb-2" style={{ color: '#6B7280' }}>
+            <strong>Opt-In:</strong> Participation is entirely voluntary. You opt in by checking the applicable checkbox on our signup form.
+          </p>
+          <p className="mb-2" style={{ color: '#6B7280' }}>
+            <strong>Opt-Out:</strong> Reply <strong>STOP</strong> to any message to opt out at any time. Reply <strong>HELP</strong> for assistance.
+          </p>
+          <p className="mb-2" style={{ color: '#6B7280' }}>
+            <strong>Message &amp; Data Rates:</strong> Message and data rates may apply. Message frequency varies.
+          </p>
+          <p className="mb-6" style={{ color: '#6B7280' }}>
+            <strong>Privacy:</strong> No mobile information will be shared with or sold to third parties for marketing or promotional purposes. For full details, see our <Link href="/sms-terms" className="font-medium" style={{ color: '#2F6FA3' }}>SMS Terms &amp; Conditions</Link>.
+          </p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#1F2937' }}>3. Account Registration and Security</h2>
 

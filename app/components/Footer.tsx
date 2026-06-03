@@ -66,15 +66,33 @@ export default function Footer() {
                   Terms of Service
                 </Link>
               </li>
+              <li>
+                <Link href="/sms-terms" style={{ color: '#9CA3AF' }} className="hover:text-white">
+                  SMS Terms
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <p style={{ color: '#9CA3AF' }}>
-              support@aibenefitsagent.com
+              <a href="mailto:support@aibenefitsagent.com" className="hover:text-white" style={{ color: '#9CA3AF' }}>
+                support@aibenefitsagent.com
+              </a>
             </p>
             <p className="mt-2" style={{ color: '#9CA3AF' }}>
-              United States
+              <a href="tel:+13022080220" className="hover:text-white" style={{ color: '#9CA3AF' }}>
+                (302) 208-0220
+              </a>
+            </p>
+            <p className="mt-2" style={{ color: '#9CA3AF' }}>
+              1401 Pennsylvania Ave, Suite 105
+            </p>
+            <p style={{ color: '#9CA3AF' }}>
+              Wilmington, DE 19806
+            </p>
+            <p style={{ color: '#9CA3AF' }}>
+              United States of America
             </p>
           </div>
         </div>
