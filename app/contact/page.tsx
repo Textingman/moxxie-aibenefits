@@ -2,8 +2,7 @@
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { MapPin, Phone, Mail, MessageSquare } from 'lucide-react';
-import Link from 'next/link';
+import { MapPin, Phone, Mail } from 'lucide-react';
 import { useState } from 'react';
 
 export default function ContactPage() {
@@ -95,21 +94,6 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* SMS */}
-            <div className="rounded-xl p-5 border flex items-start gap-4" style={{ backgroundColor: '#F5F7FA', borderColor: '#E5E7EB' }}>
-              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FEF3C7' }}>
-                <MessageSquare className="w-5 h-5" style={{ color: '#D97706' }} />
-              </div>
-              <div>
-                <h3 className="font-semibold mb-1" style={{ color: '#1F2937' }}>SMS Support</h3>
-                <p style={{ color: '#6B7280' }}>
-                  Text <strong>HELP</strong> to <strong>(302) 208-0220</strong>. Reply <strong>STOP</strong> to opt out.
-                </p>
-                <Link href="/sms-terms" className="inline-block mt-1 text-sm font-medium hover:opacity-80" style={{ color: '#2F6FA3' }}>
-                  View SMS Terms →
-                </Link>
-              </div>
-            </div>
           </div>
 
           {/* Contact Form */}
