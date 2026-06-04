@@ -19,10 +19,10 @@ export default function Footer() {
                 aria-label="LinkedIn"
                 className="hover:opacity-80 transition-opacity"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#9CA3AF">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                  <rect x="2" y="9" width="4" height="12" />
-                  <circle cx="4" cy="4" r="2" />
+                {/* Official LinkedIn logo */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+                  <path d="M7.75 9.5h-2.5v8h2.5v-8zm-1.25-1a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5zm10.25 1c-1.38 0-2.3.75-2.75 1.5V9.5h-2.5v8h2.5v-4.25c0-1.1.9-2 2-2s2 .9 2 2V17.5h2.5v-4.75c0-2.62-1.5-4.25-3.75-4.25z" fill="white"/>
                 </svg>
               </a>
               <a
