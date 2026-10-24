@@ -11,7 +11,7 @@ export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 py-12" style={{ backgroundColor: '#F5F8FC' }}>
+    <div className="min-h-screen flex items-center justify-center px-6 py-12" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="w-full max-w-md">
         {/* Logo */}
         <div className="mb-8 text-center">
