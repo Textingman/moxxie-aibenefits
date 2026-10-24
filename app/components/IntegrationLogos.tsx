@@ -3,7 +3,7 @@
 // Using logo.dev with the publishable key
 // Note: logo.dev requires the requesting domain to be whitelisted in the dashboard
 // Add localhost:3000 and aibenefitsagent.com in logo.dev dashboard → AI Benefits → Allowed Domains
-const LOGO_DEV_KEY = 'pk_YckjJfb2Rt2NPcvwfZu06g';
+const LOGO_DEV_KEY = 'pk_YckjJfb2Rt2NPcvwfZuO6g';
 
 const integrations = [
   { name: 'Justworks', domain: 'justworks.com' },

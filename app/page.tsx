@@ -412,7 +412,7 @@ export default function HomePage() {
               <div key={tool.name} className="flex items-center gap-3 p-4 rounded-xl border bg-white hover:shadow-md transition-all" style={{ borderColor: '#E2E8F0' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`https://img.logo.dev/${tool.domain}?token=pk_YckjJfb2Rt2NPcvwfZu06g&size=40&format=png`}
+                  src={`https://img.logo.dev/${tool.domain}?token=pk_YckjJfb2Rt2NPcvwfZuO6g&size=40&format=png`}
                   alt={`${tool.name} logo`}
                   width={28}
                   height={28}
