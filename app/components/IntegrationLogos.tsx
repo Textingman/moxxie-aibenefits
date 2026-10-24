@@ -49,7 +49,7 @@ function LogoImg({ domain, name, size = 20 }: { domain: string; name: string; si
       >
         {initial}
       </div>
-      {/* Logo image on top — hides fallback if it loads */}
+      {/* Logo image on top — loads when domain is whitelisted in logo.dev (currently: Any domain) */}
       <img
         src={`https://img.logo.dev/${domain}?token=${LOGO_DEV_KEY}&size=${size * 2}&format=png`}
         alt={`${name} logo`}
