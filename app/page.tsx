@@ -369,35 +369,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section style={{ backgroundColor: '#F5F8FC' }} className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold" style={{ color: '#1D2939' }}>Employees Are Finally Using Their Benefits</h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { quote: "I had no idea I was missing $2,400/year in 401(k) match. AI Benefits Agent caught it in 30 seconds. I updated my contribution that same day.", name: "Marcus T.", role: "Software Engineer · Justworks user" },
-              { quote: "Open enrollment used to give me anxiety. I asked the AI to compare my PPO vs HDHP options and it gave me a clear recommendation based on my actual usage. Game changer.", name: "Priya K.", role: "Marketing Manager · Gusto user" },
-              { quote: "I had 8 PTO days expiring at year end and didn't know. The AI flagged it and helped me plan time off before I lost them. Saved me a week of vacation.", name: "James R.", role: "Operations Lead · ADP user" },
-            ].map((t, i) => (
-              <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border" style={{ borderColor: '#E2E8F0' }}>
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, j) => (
-                    <Star key={j} className="w-4 h-4 fill-current" style={{ color: '#D99A36' }} />
-                  ))}
-                </div>
-                <p className="mb-6 text-sm italic" style={{ color: '#4B5563' }}>"{t.quote}"</p>
-                <div>
-                  <p className="font-bold text-sm" style={{ color: '#1D2939' }}>{t.name}</p>
-                  <p className="text-xs" style={{ color: '#667085' }}>{t.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Stats */}
       <section style={{ backgroundColor: '#FFFFFF', borderTop: '1px solid #E2E8F0', borderBottom: '1px solid #E2E8F0' }} className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
