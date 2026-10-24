@@ -1,32 +1,74 @@
 'use client';
 
-// logo.dev CDN key — works from browser when domain is whitelisted in logo.dev dashboard
-// The key pk_YckjJfb2Rt2NPcvwfZu06g requires aibenefitsagent.com to be added as allowed domain
-// For local dev, using clearbit as fallback which works without auth
+// Using logo.dev with the publishable key
+// Note: logo.dev requires the requesting domain to be whitelisted in the dashboard
+// Add localhost:3000 and aibenefitsagent.com in logo.dev dashboard → AI Benefits → Allowed Domains
+const LOGO_DEV_KEY = 'pk_YckjJfb2Rt2NPcvwfZu06g';
+
 const integrations = [
-  { name: 'Justworks', domain: 'justworks.com', color: '#1F4E79' },
-  { name: 'Gusto', domain: 'gusto.com', color: '#F97316' },
-  { name: 'ADP', domain: 'adp.com', color: '#DC2626' },
-  { name: 'Rippling', domain: 'rippling.com', color: '#7C3AED' },
-  { name: 'BambooHR', domain: 'bamboohr.com', color: '#5C9367' },
-  { name: 'Workday', domain: 'workday.com', color: '#0EA5E9' },
-  { name: 'Paychex', domain: 'paychex.com', color: '#1D2939' },
-  { name: 'TriNet', domain: 'trinet.com', color: '#2563EB' },
+  { name: 'Justworks', domain: 'justworks.com' },
+  { name: 'Gusto', domain: 'gusto.com' },
+  { name: 'ADP', domain: 'adp.com' },
+  { name: 'Rippling', domain: 'rippling.com' },
+  { name: 'BambooHR', domain: 'bamboohr.com' },
+  { name: 'Workday', domain: 'workday.com' },
+  { name: 'Paychex', domain: 'paychex.com' },
+  { name: 'TriNet', domain: 'trinet.com' },
 ];
 
+// Fallback colored initials if logo fails to load
+const colors: Record<string, string> = {
+  'Justworks': '#1F4E79',
+  'Gusto': '#F97316',
+  'ADP': '#DC2626',
+  'Rippling': '#7C3AED',
+  'BambooHR': '#5C9367',
+  'Workday': '#0EA5E9',
+  'Paychex': '#1D2939',
+  'TriNet': '#2563EB',
+};
+
 function LogoImg({ domain, name, size = 20 }: { domain: string; name: string; size?: number }) {
+  const initial = name.charAt(0);
+  const color = colors[name] || '#245A89';
+
   return (
-    <img
-      src={`https://logo.clearbit.com/${domain}`}
-      alt={`${name} logo`}
-      width={size}
-      height={size}
-      className="rounded-sm object-contain flex-shrink-0"
-      style={{ width: size, height: size }}
-      onError={(e) => {
-        (e.target as HTMLImageElement).style.display = 'none';
-      }}
-    />
+    <div style={{ position: 'relative', width: size, height: size, flexShrink: 0 }}>
+      {/* Fallback colored initial */}
+      <div
+        className="rounded-sm flex items-center justify-center text-white font-bold"
+        style={{
+          width: size,
+          height: size,
+          backgroundColor: color,
+          fontSize: size * 0.5,
+          position: 'absolute',
+          top: 0,
+          left: 0,
+        }}
+      >
+        {initial}
+      </div>
+      {/* Logo image on top — hides fallback if it loads */}
+      <img
+        src={`https://img.logo.dev/${domain}?token=${LOGO_DEV_KEY}&size=${size * 2}&format=png`}
+        alt={`${name} logo`}
+        width={size}
+        height={size}
+        className="rounded-sm object-contain"
+        style={{
+          width: size,
+          height: size,
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          backgroundColor: '#FFFFFF',
+        }}
+        onError={(e) => {
+          (e.target as HTMLImageElement).style.display = 'none';
+        }}
+      />
+    </div>
   );
 }
 
