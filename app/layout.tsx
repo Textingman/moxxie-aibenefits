@@ -13,8 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Benefits Agent - Your AI Agent for Benefits Education",
-  description: "Meet your personal AI benefits advisor. Get instant, unbiased answers to all your benefits questions — coverage, costs, enrollment, and more. No salespeople. No pressure.",
+  title: "AI Benefits Agent - Give Your Employees an AI Benefits Advisor",
+  description: "AI Benefits Agent connects to your existing HR platform and gives every employee a personal AI advisor that helps them maximize their HSA, 401(k), PTO, and health coverage.",
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
 };
 
 export default function RootLayout({

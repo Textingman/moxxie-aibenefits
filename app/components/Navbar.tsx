@@ -17,11 +17,11 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
               <Image
-                src="/ai-logo.png"
+                src="/new-logo.png"
                 alt="AI Benefits Agent"
-                width={48}
-                height={48}
-                className="h-10 w-10 object-contain"
+                width={400}
+                height={220}
+                className="h-10 w-auto"
               />
             </Link>
           </div>
