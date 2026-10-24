@@ -119,20 +119,13 @@ export default function LoginPage() {
         <div className="w-full max-w-md">
           {/* Mobile logo */}
           <div className="lg:hidden mb-8 text-center">
-            <Link href="/" className="inline-flex items-center gap-3">
-              <Image
-                src="/ai-logo.png"
-                alt="AI Benefits Agent"
-                width={40}
-                height={40}
-                className="w-10 h-10 object-contain"
-              />
+            <Link href="/">
               <Image
                 src="/new-logo.png"
                 alt="AI Benefits Agent"
-                width={160}
-                height={44}
-                className="h-8 w-auto"
+                width={200}
+                height={55}
+                className="h-10 w-auto mx-auto"
               />
             </Link>
           </div>
